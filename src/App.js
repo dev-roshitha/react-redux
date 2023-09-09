@@ -2,6 +2,7 @@ import './App.css';
 import {
   createBrowserRouter,
   RouterProvider,
+  Outlet
 } from "react-router-dom";
 import Home from "./pages/home"
 import About from "./pages/about"
@@ -12,6 +13,7 @@ const Layout = () => {
   return(<>
     <div className="app">
       <Navbar/>
+      <Outlet/>
       <Footer/>
     </div>
   </>)
