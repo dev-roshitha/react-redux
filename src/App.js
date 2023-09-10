@@ -1,4 +1,3 @@
-import './App.css';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -8,6 +7,7 @@ import Home from "./pages/home"
 import About from "./pages/about"
 import Navbar from './components/nav-bar';
 import Footer from './components/footer';
+import "./sass/main.scss";
 
 const Layout = () => {
   return(<>
