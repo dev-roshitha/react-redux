@@ -14,13 +14,15 @@ const Home = () => {
   return(
     <div>
       <h1>Home Page WITH REACT ROUTER DOM</h1>
-      <div className="home-wrapper">
-        <input type="text" value={state.name} placeholder="Enter Name" />
-        <input type="text" value={state.email} placeholder="Email" />
-        <input type="text" value={state.address} placeholder="Adderss" />
-        <input type="text" value={state.phone} placeholder="phone" />
-        <button>Submit</button>
-      </div>
+      <section className="wrapper">
+        <div className="home-wrapper">
+          <input type="text" value={state.name} placeholder="Enter Name" />
+          <input type="text" value={state.email} placeholder="Email" />
+          <input type="text" value={state.address} placeholder="Adderss" />
+          <input type="text" value={state.phone} placeholder="phone" />
+          <button>Submit</button>
+        </div>
+      </section>
     </div>
   )
 }

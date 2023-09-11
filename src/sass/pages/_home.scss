@@ -1,7 +1,14 @@
-.home-wrapper{
-  padding: 100px 0px;
-  margin: auto;
-  width: 50%;
-  display: flex;
-  flex-direction: column;
+.wrapper{
+  .home-wrapper{
+    padding: 100px 0px;
+    margin: auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+      input{
+        border: 1px solid black;
+        padding: 10px 5px;
+      }
+  }
 }
