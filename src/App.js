@@ -8,6 +8,9 @@ import About from "./pages/about"
 import Navbar from './components/nav-bar';
 import Footer from './components/footer';
 import "./sass/main.scss";
+import InitMain from "./modules/main"
+
+InitMain()
 
 const Layout = () => {
   return(<>
