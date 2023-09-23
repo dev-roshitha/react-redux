@@ -1,6 +1,7 @@
 import Slider from "./slider"
 
 const initMain = () => {
+
   Slider()
 }
 

@@ -24,7 +24,7 @@ const Home = () => {
   })
   console.log(state)
   return(
-    <div>
+    <div className="page">
       <h1>Home Page WITH REACT ROUTER DOM</h1>
       <section className="wrapper">
         <div className="home-wrapper">

@@ -10,7 +10,6 @@ import Footer from './components/footer';
 import "./sass/main.scss";
 import InitMain from "./modules/main"
 
-InitMain()
 
 const Layout = () => {
   return(<>
@@ -47,4 +46,5 @@ function App() {
   );
 }
 
+InitMain()
 export default App;
