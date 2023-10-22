@@ -13,7 +13,7 @@ import InitMain from "./modules/main"
 
 const Layout = () => {
   return(<>
-    <div className="app">
+    <div className="router-layout">
       <Navbar/>
       <Outlet/>
       <Footer/>
