@@ -1,7 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+
 .card{
   margin-top: 60px;
   padding: 100px 100px;
   text-align: center;
   color: black;
   background-color: aquamarine;
+  font-family: 'Poppins', sans-serif;
+
+
+  .form{
+    margin-top: 50px;
+    form{
+      margin: auto;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+      .form-input{
+        padding: 10px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 0px 0px 6px rgba(35, 35, 35, 0.5);
+        &:focus{
+          outline: none;
+        }
+      }
+      .submit-btn{
+        width: max-content;
+        margin: auto;
+        padding: 7px 35px;
+        border: none;
+        background-color: #0C356A;
+        transition: 0.5s;
+        color: #fff;
+        font-family: 'Poppins', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        border-radius: 5px;
+        &:hover{
+          background-color: #09254a;
+          cursor: pointer;
+        }
+      }
+    }
+  }
 }

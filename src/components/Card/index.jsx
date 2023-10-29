@@ -4,9 +4,22 @@ import React, {useState} from "react"
 const Card = (props) => {
 
   const [loged, setLoged] = useState(false);
+  const [data, setData] = useState()
 
   const handleLog = () => {
     setLoged(!loged)
+  }
+
+  const handleSubmit = (event) => {
+    event.preventDefault()
+    console.log(data)
+  }
+
+  const handleChange = (event) => {
+    setData({
+      ...data,
+      [event.target.name] : event.target.type === 'checkbox' ? event.target.checked : event.target.value
+    })
   }
 
   return(
@@ -17,6 +30,15 @@ const Card = (props) => {
     <br/>
     <h1>{loged ? 'User Loged-in' : 'User Loged-out'}</h1>
     <button onClick={handleLog}>{loged ? 'Logout' : 'Login'}</button>
+
+    <div className="form">
+      <form onSubmit={handleSubmit} className="input-form">
+        <input className="form-input" type="text" name="firstName" onChange={handleChange}/>
+        <input className="form-input" type="text" name="lastName" onChange={handleChange}/>
+        <input className="form-checkbox" type="checkbox" name="btnStatus" onChange={handleChange}/>
+        <button className="submit-btn" type="submit">Signup</button>
+      </form>
+    </div>
   </div>
   )
 }

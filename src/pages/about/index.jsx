@@ -3,7 +3,7 @@ import { useState } from "react"
 
 const About = () => {
 
-  const [age, setAge] = useState(30)
+  const [age, setAge] = useState(25)
 
   return(
     <div className="about-page-main">
